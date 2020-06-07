@@ -1,0 +1,8 @@
+int fputc(int ch,FILE *F){
+HAL_UART_Transmit (&huart2 ,(uint8_t*)&ch,1,10);
+return (ch);
+}
+
+
+
+TIM2->EGR = 0x0001;
